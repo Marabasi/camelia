@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="../Img/Logo-de-Camelia.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./../style/style.css">
+</head>
+<body class="body">
+    <header>
+        <div class="titulo">
+            <img class="imagendelogo" src="../Img/Logo-de-Camelia.jpg" alt="Camelia logo" width="250px">
+        </div>
+
+        <!--Lista no ordenada-->
+        <nav>
+            <ul class="menu">
+                <li><a class="subrayado" href="../index.html">Inicio</a></li>
+                <li><a class="subrayado" href="../Pages/Productos.html">Productos</a></li>
+                <li><a class="subrayado" href="../Pages/Podcast.html">Poadcast</a></li>
+                <li><a class="subrayado" href="../Pages/Noticias.html">Noticias</a></li>   
+                <li><a class="subrayado" href="../Pages/Contacto.html">Contacto</a></li>
+                <!-- <li><a class="subrayado" href="#pie">Ir al pie de página</a></li> -->
+            </ul>
+        </nav>
+        <form action="">
+            <div class="banner">
+            <h1>Noticias</h1>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <section class="info">
+            <div>
+                <h2 class="Subtitulo">Encuentro mensual de yoga</h2>
+                <p>Mensualmente realizamos encuentros para realizar yoga con la profesora Brenda Medina, aquí compartimos información, noticias y te invitamos a que participes.</p>
+                <p>Esto fué lo que realizamos en nuestro último encuentro en la chacra de retiro Esperanza.</p>
+            </div>
+            <div class="videopodcast">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QNKmUFRuozA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <section class="info">
+        <div>
+            <p>Si quieres unirte a nuestro próximo encuentro de yoga que se realizará en el mes de Agosto en Punta del este te invitamos a que te comuniques con nosotros llenando este formulario.</p>
+        </div>
+        <div>
+            <form action="">
+                <div class="formulario">
+                    <label for="nombre">
+                        Nombre completo
+                        <input type="text" id="nombre" required>
+                    </label>
+                    
+                    <label for="email">
+                        E-mail
+                        <input type="email" id="email">
+                    </label>
+                    
+                    <label for="number">
+                        Número de contacto
+                        <input type="number"required>
+                    </label>
+                    
+                    <label for="mensaje">
+                        Mensaje
+                        <textarea name="" id="mensaje" cols="15" rows="5"></textarea>
+                    </label>
+            
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Borrar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <a class="volver" href="#">Volver arriba</a>
+    <br>
+    <br>
+    <hr>
+    <footer id="pie">
+        <div class="redes">
+            <a class="subrayado" href="">
+            Facebook
+            </a>
+            <a class="subrayado" href="https://www.instagram.com/camel.ias/">
+            Instagram
+            </a>
+            <a class="subrayado" href="">
+            Whatsapp
+            </a>
+            <a class="subrayado" href="">
+            Compartir
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
