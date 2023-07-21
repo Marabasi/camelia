@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Img/Logo-de-Camelia.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./../style/style.css">
 </head>
@@ -14,16 +15,46 @@
         </div>
 
         <!--Lista no ordenada-->
-        <nav>
+        <!-- <nav>
             <ul class="menu">
                 <li><a class="subrayado" href="../index.html">Inicio</a></li>
                 <li><a class="subrayado" href="../Pages/Productos.html">Productos</a></li>
                 <li><a class="subrayado" href="../Pages/Podcast.html">Poadcast</a></li>
                 <li><a class="subrayado" href="../Pages/Noticias.html">Noticias</a></li>   
                 <li><a class="subrayado" href="../Pages/Contacto.html">Contacto</a></li>
-                <!-- <li><a class="subrayado" href="#pie">Ir al pie de página</a></li> -->
+                <li><a class="subrayado" href="#pie">Ir al pie de página</a></li>
             </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Camelia inicio</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Pages/Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Pages/Podcast.html">Podcast</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Pages/Noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
         </nav>
+
         <form action="">
             <div class="banner">
             <h1>Contacto</h1>
@@ -46,8 +77,12 @@
             </div>
             
         </div>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26828.46944600751!2d-56.52329836574696!3d-32.80395909356541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a641a12ab6dad1%3A0x65830ef559dd1924!2s45100%20Paso%20de%20los%20Toros%2C%20Departamento%20de%20Tacuaremb%C3%B3!5e0!3m2!1ses-419!2suy!4v1689957045914!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
         <div>
-            <h2>Información de contacto</h2>
+            <h2 class="contactanos">Información de contacto</h2>
             <p class="p"><strong>Teléfono:</strong> +598123568</p>
             <p class="p"><strong>E-mail:</strong> Camelias@gmail.com</p>
             <p class="p"><strong>Dirección:</strong> Correa esquina Saravia 1234, ciudad de Libertad, departamento de Tacuarembó, Uruguay.</p>
@@ -106,6 +141,6 @@
             </a>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

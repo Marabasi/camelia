@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camelia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="./Img/Logo-de-Camelia.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
+
     
 </head>
 <body class="body">
@@ -15,16 +17,45 @@
         </div>
     
         <!--Lista no ordenada-->
-        <nav>
+        <!-- <nav>
             <ul class="menu">
                 <li><a class="subrayado" href="./index.html">Inicio</a></li>
                 <li><a class="subrayado" href="./Pages/Productos.html">Productos</a></li>
                 <li><a class="subrayado" href="./Pages/Podcast.html">Poadcast</a></li>
                 <li><a class="subrayado" href="./Pages/Noticias.html">Noticias</a></li>   
                 <li><a class="subrayado" href="./Pages/Contacto.html">Contacto</a></li>
-                <!-- <li><a class="subrayado" href="#pie">Ir al pie de página</a></li> -->
+                <li><a class="subrayado" href="#pie">Ir al pie de página</a></li>
             </ul>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="./index.html">Camelia inicio</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Pages/Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Pages/Podcast.html">Podcast</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Pages/Noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     
         <form action="">
             <div class="banner">
@@ -33,17 +64,14 @@
         </form>
     </header>
 
-    <br>
-
     <main>
         <section class="info">
             <h3 class="subtitulo-info">Sobre nosotros</h3>
                 <div class="cajita">
-                    <img src="./Img/Sobre-nosotras.jpg" alt="Sobre nosotras" title="Sobre nosotras" width="350px">
+                    <img class= "img_inicio" src="./Img/Sobre-nosotras.jpg" alt="Sobre nosotras" title="Sobre nosotras" width="35%">
                         <div class="parrafos">
                             <p>Somos jóvenes emprededoras, amantes de la naturaleza, el bienestar y el equilibrio. ¿Sabés cómo surgió Camelia? Un día con mi amiga comenzamos a charlar de "la vida en general" en un mundo tan ajetreado donde a veces nos resulta difícil desconectarnos de la ciudad, el estrés, el cansancio y el agobio, comenzamos a recordar nuestra infancia, cuando no teníamos tantas responsabilidades y lo único que nos hacía feliz era conectarnos con la naturaleza explorando nuestro jardín conociendo nuevos aromas y colores, por eso buscamos una forma de llevar la naturaleza a nuestro hogar y aquí surguió la idea de crear Camelia, recordando esos aromas de las plantas y flores del jardín de nuestra infancia a través de los inciensos, aceites y cremas. 
                             Ofrecemos productos de excelente calidad de distintas variedades como aceites escenciales anti-strés, para el buen descanso, florales y aromatizantes, cremas relajantes y descontracturantes, inciensos de resina y naturales, velas y adornos para el hogar.</p>
-
                         </div>
                         
                 </div>
@@ -51,7 +79,7 @@
                 <h3 class="subtitulo-info">Nuevos productos</h3>
                     <div class="cajita">
                         
-                        <img src="./Img/Nuevos-productos.jpg" alt="Nuevos productos" title="Nuevos productos" width="350px">
+                        <img class= "img_inicio" src="./Img/Nuevos-productos.jpg" alt="Nuevos productos" title="Nuevos productos" width="35%">
                         <div class="parrafos">
                             <p>Ingresa aquí para ver los nuevos productos. Llegaron humidificadores, fuentes de humo, perfumadores textil, sahumadores, cuencos y porta inciensos.</p>
                         </div>
@@ -61,7 +89,7 @@
                 <h3 class="subtitulo-info">Relajación</h3>
                     <div class="cajita">
                         
-                        <img src="./Img/Relajacion.jpg" alt="Relajacion" title="Relajacion" width="350px">
+                        <img class= "img_inicio" src="./Img/Relajacion.jpg" alt="Relajacion" title="Relajacion" width="35%">
                         <div class="parrafos">
                             <p>Como dijimos anteriormente, nos gusta el equilibrio y el bienestar, entonces decidimos crear este espacio para relajarnos un poco.
                             Aquí compartimos videos y recomendaciones para ayudar con nuestro bienestar. También tenemos nuestra sección de Podcast donde podrás encontrar audios con meditaciones guiadas.</p>
@@ -92,6 +120,6 @@
             </a>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
