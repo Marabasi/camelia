@@ -109,7 +109,7 @@ section {
 .info p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1B0005;
-    font-size: 17px;
+    font-size: 22px;
     line-height: 30px;
 }
 
@@ -243,6 +243,25 @@ h2{
     margin: 3px;
 }
 
+.header {
+    color: #E18E9D;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #E18E9D;
+}
+
+.form-group {
+    margin-bottom: 3px
+}
+
+.btn{
+    color:#F9E9EC
+}
+
 /* Quinta página Contacto */
 
 .info-contacto {
@@ -261,15 +280,17 @@ h2{
 .p {
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 20px;
+    margin: 15px;
     width: 400px;
 }
 
 .map-responsive {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
     overflow: hidden;
-    padding-bottom: 35%;
+    padding-bottom: 45%;
     position: relative;
     height: 0;
 }
@@ -286,13 +307,15 @@ h2{
 
 /* Mobile first */
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 480px) {
     .body {
         background-color: #AA4139;
         color: #FF2615;
     }
     .info {
-        display: grid;
+        flex-direction: column;
+        width: auto;
+        /* display: grid; */
         grid-template-columns: 1fr;
     }
     .cajita {
@@ -321,9 +344,6 @@ h2{
         flex-direction: column;
         width: 100%;
     }
-     .info {
-        flex-direction: column;
-     }
 
     .menu {
         flex-direction: column;
@@ -344,6 +364,7 @@ h2{
      }
 
      .h2 {
+        font-size: 20px;
         color: #F64133;
      }
 
@@ -351,10 +372,6 @@ h2{
         color: #5E2F2B;
      }
 
-     .info {
-        flex-direction: column;
-        width: auto;
-     }
      .Notinfo {
         display: grid;
         grid-template-columns: 100%;
@@ -374,7 +391,7 @@ h2{
         flex-direction: column;
         gap: 0rem;
       }
-     
+
      .horario {
         display: grid;
         grid-template-columns: 1fr;
@@ -387,8 +404,15 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
      }
+     .atencion {
+        display: flex;
+        flex-direction: column;
+     }
 
-    
+     .p {
+        width: 300px;
+     }
+
 
 }
 
@@ -401,7 +425,7 @@ h2{
         color: #E600C2;
     }
     .info {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: 1fr;
     }
     .cajita {
@@ -413,7 +437,7 @@ h2{
         display: flex;
         width: 60%;
         align-content: center;
-        
+
     }
     .parrafos {
         display: grid;
@@ -457,5 +481,7 @@ h2{
      .h3 {
         color: #462D42;
      }
-
-}  
+     .p {
+        width: 200px;
+     }
+}
