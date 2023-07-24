@@ -230,7 +230,7 @@ h2{
     align-items: start;
     width: 260px;
     height: 380px;
-    background-color: #E18E9D;;
+    background-color: #E18E9D;
     padding: 3rem;
     margin: 1rem;
 }
@@ -259,7 +259,17 @@ h2{
 }
 
 .btn{
-    color:#F9E9EC
+    color:#9F3548
+}
+
+.btn-outline-success {
+    --bs-btn-color: #9F3548;
+    --bs-btn-border-color: #9F3548;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #E18E9D;
+    --bs-btn-border-color: #E18E9D;
 }
 
 /* Quinta página Contacto */
@@ -336,6 +346,7 @@ h2{
         position: relative;
         padding: auto;
         margin: auto;
+        color: #5E2F2B
     }
     .imagendelogo {
         margin:auto;
@@ -377,6 +388,7 @@ h2{
         grid-template-columns: 100%;
         /* text-align: start; */
         /* width: 100%; */
+        color: #5E2F2B
      }
 
      .Subtitulo {
@@ -411,8 +423,8 @@ h2{
 
      .p {
         width: 300px;
+        color: #130C0B
      }
-
 
 }
 
@@ -483,5 +495,6 @@ h2{
      }
      .p {
         width: 200px;
+        color: #1B0005;
      }
 }
