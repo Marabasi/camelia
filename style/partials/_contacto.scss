@@ -1,0 +1,48 @@
+.info-contacto {
+    padding-top: 2rem;
+    padding-inline: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .atencion {
+        display: flex;
+        justify-content: space-between;
+        .p {
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin: 15px;
+            width: 400px;
+        }
+      }
+    .comunicate {
+        .map-responsive {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px;
+            overflow: hidden;
+            padding-bottom: 45%;
+            position: relative;
+            height: 0;
+            .map-responsive iframe {
+                left: 0;
+                top: 0;
+                height: 80%;
+                width: 50%;
+                position: absolute;
+            }
+        }
+    }
+    .contactanos{
+        color: $secondaryColor;
+        
+        
+    }
+    p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #1B0005;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+  }

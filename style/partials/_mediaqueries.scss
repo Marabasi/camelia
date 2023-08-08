@@ -1,38 +1,15 @@
-/* Cuarta página Noticias */
-
-/* .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 260px;
-    height: 380px;
-    background-color: #E18E9D;
-    padding: 3rem;
-    margin: 1rem;
-}
-
-.boton {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    padding: 2px;
-    margin: 3px;
-} */
-
-
-/* Mobile first */
-
 @media screen and (max-width: 480px) {
     .body {
         background-color: #AA4139;
         color: #FF2615;
     }
+
     .info {
         flex-direction: column;
         width: auto;
-        /* display: grid; */
         grid-template-columns: 1fr;
     }
+
     .cajita {
         display: grid;
         grid-template-columns: 1fr;
@@ -44,6 +21,7 @@
         text-align: center;
         width: 100%;
     }
+
     .parrafos {
         display: grid;
         grid-template-columns: 1fr;
@@ -51,11 +29,13 @@
         position: relative;
         padding: auto;
         margin: auto;
-        color: #5E2F2B
+        color: #5E2F2B;
     }
+
     .imagendelogo {
         margin:auto;
     }
+
     .titulo {
         flex-direction: column;
         width: 100%;
@@ -66,76 +46,75 @@
         width: auto;
     }
 
-     .productos {
+    .productos {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-     }
+        grid-template-rows: repeat (12, 1fr);
 
-     .menu li a {
+    }
+
+    .menu li a {
         color: #130C0B;
-     }
-
-     .h1 {
+    }
+    
+    .h1 {
         color: #FF2615;
-     }
+    }
 
-     .h2 {
+    .h2 {
         font-size: 20px;
         color: #F64133;
-     }
+    }
 
-     .h3 {
+    .h3 {
         color: #5E2F2B;
-     }
+    }
 
-     .Notinfo {
+    .Notinfo {
         display: grid;
         grid-template-columns: 100%;
-        color: #5E2F2B
-     }
+        color: #5E2F2B;
+    }
 
-     .Subtitulo {
+    .Subtitulo {
         flex-direction: column;
         width: auto;
-     }
+    }
 
-     .info-contacto {
+    .info-contacto {
         padding-top: 0rem;
         padding-inline: 0rem;
         display: flex;
         flex-direction: column;
         gap: 0rem;
-      }
+    }
 
-     .horario {
+    .horario {
         display: grid;
         grid-template-columns: 1fr;
-     }
-     .comunicate {
+    }
+    .comunicate {
         display: grid;
         grid-template-columns: 1fr;
-     }
-     .map-responsive {
+    }
+    .map-responsive {
         width: 100%;
-     }
-     .contactanos {
+    }
+    .contactanos {
         display: grid;
         grid-template-columns: 1fr;
-     }
-     .atencion {
+    }
+    .atencion {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     .p {
+    .p {
         width: 300px;
-        color: #130C0B
-     }
+        color: #130C0B;
+    }
 
 }
 
-
-/* Tablet screen */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
     .body {
@@ -143,7 +122,6 @@
         color: #E600C2;
     }
     .info {
-        /* display: grid; */
         grid-template-columns: 1fr;
     }
     .cajita {
