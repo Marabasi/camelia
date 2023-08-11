@@ -276,14 +276,14 @@ footer .redes {
 }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-  body {
+  .body {
     background-color: #78286B;
     color: #E600C2;
   }
-  body .imagendelogo {
+  .body .imagendelogo {
     margin: auto;
   }
-  body .titulo {
+  .body .titulo {
     flex-direction: column;
     width: 100%;
   }
