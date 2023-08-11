@@ -1,4 +1,16 @@
 @media screen and (min-width: 480px) and (max-width: 800px) {
+    body {
+        background-color: #78286B;
+        color: #E600C2;
+        .imagendelogo {
+            margin:auto;
+        }
+        .titulo {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
     main {
         .info {
             flex-direction: column;
@@ -25,18 +37,7 @@
          }
         
     }
-    body {
-        background-color: #78286B;
-        color: #E600C2;
-        .imagendelogo {
-            margin:auto;
-        }
-        .titulo {
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-
+    
     .h1 {
         color: #E600C2;
      }
@@ -114,32 +115,35 @@
         color: #FF2615;
     }
 
-    .info {
-        flex-direction: column;
-        width: auto;
-        grid-template-columns: 1fr;
-        .cajita {
-            display: grid;
+    main {
+        .info {
+            flex-direction: column;
+            width: auto;
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            .img_inicio {
-                display: flex;
-                text-align: center;
-                width: auto;
-                height: 100%;
-            }
-            .parrafos {
+            .cajita {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
-                position: relative;
-                padding: auto;
-                margin: auto;
-                color: #5E2F2B;
+                flex-direction: column;
+                .img_inicio {
+                    display: flex;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                .parrafos {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    position: relative;
+                    padding: auto;
+                    margin: auto;
+                    color: #5E2F2B;
+                }
             }
         }
     }
-
+    
     .productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat (12, 1fr);

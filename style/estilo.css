@@ -276,6 +276,17 @@ footer .redes {
 }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
+  body {
+    background-color: #78286B;
+    color: #E600C2;
+  }
+  body .imagendelogo {
+    margin: auto;
+  }
+  body .titulo {
+    flex-direction: column;
+    width: 100%;
+  }
   main .info {
     flex-direction: column;
     grid-template-columns: 1fr;
@@ -298,17 +309,6 @@ footer .redes {
     padding: auto;
     margin: auto;
     display: grid;
-  }
-  body {
-    background-color: #78286B;
-    color: #E600C2;
-  }
-  body .imagendelogo {
-    margin: auto;
-  }
-  body .titulo {
-    flex-direction: column;
-    width: 100%;
   }
   .h1 {
     color: #E600C2;
@@ -374,23 +374,24 @@ footer .redes {
   .h1 {
     color: #FF2615;
   }
-  .info {
+  main .info {
     flex-direction: column;
     width: auto;
     grid-template-columns: 1fr;
   }
-  .info .cajita {
+  main .info .cajita {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    flex-direction: column;
   }
-  .info .cajita .img_inicio {
+  main .info .cajita .img_inicio {
     display: flex;
     text-align: center;
-    width: auto;
+    width: 100%;
     height: 100%;
   }
-  .info .cajita .parrafos {
+  main .info .cajita .parrafos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
