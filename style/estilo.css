@@ -141,6 +141,7 @@ footer .redes {
   display: flex;
   justify-content: center;
   align-content: space-between;
+  text-align: center;
   font-size: 35px;
 }
 
@@ -275,7 +276,7 @@ footer .redes {
   line-height: 30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media screen and (min-width: 480px) and (max-width: 950px) {
   .body {
     background-color: #78286B;
     color: #E600C2;
