@@ -7,7 +7,7 @@
 }
 
 .body .titulo {
-  background-image: url(/Img/Banner2.jpg);
+  background-image: url(//Img/Banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
