@@ -7,7 +7,7 @@
 }
 
 .body .titulo {
-  background-image: url(./../Img/Banner2.jpg);
+  background-image: url(./../Img/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -45,7 +45,10 @@
   --bs-btn-bg: $secondaryColor;
   --bs-btn-border-color: $secondaryColor;
 }
-.body .navbar .btn-outline-success:hover {
+.body .navbar .btn-outline-success {
+  color: #E18E9D;
+}
+.body .navbar:hover {
   color: #E18E9D;
 }
 
@@ -224,7 +227,7 @@ footer .redes {
 
 .info-contacto {
   padding-top: 2rem;
-  padding-inline: 4rem;
+  padding-inline: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -240,7 +243,7 @@ footer .redes {
   margin: 15px;
   width: 400px;
 }
-.info-contacto .comunicate .map-responsive {
+.info-contacto .atencion .map-responsive {
   display: flex;
   justify-content: flex-end;
   margin: 15px;
@@ -249,7 +252,7 @@ footer .redes {
   position: relative;
   height: 0;
 }
-.info-contacto .comunicate .map-responsive .map-responsive iframe {
+.info-contacto .atencion .map-responsive .map-responsive iframe {
   left: 0;
   top: 0;
   height: 80%;
@@ -257,6 +260,12 @@ footer .redes {
   position: absolute;
 }
 .info-contacto .contactanos {
+  display: flex;
+  flex-direction: column;
+}
+.info-contacto .contactanos .Subtitulocon {
+  display: flex;
+  justify-content: left;
   color: #E18E9D;
 }
 .info-contacto p {
@@ -264,4 +273,178 @@ footer .redes {
   color: #1B0005;
   font-size: 22px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    background-color: #AA4139;
+  }
+  .body .titulo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .body .imagendelogo {
+    margin: auto;
+  }
+  .h1 {
+    color: #FF2615;
+  }
+  .info {
+    flex-direction: column;
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+  .info .cajita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .info .cajita .img_inicio {
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: 100%;
+  }
+  .info .cajita .parrafos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    color: #5E2F2B;
+  }
+  .productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 12, 1fr;
+  }
+  .h2 {
+    font-size: 20px;
+    color: #F64133;
+  }
+  .h3 {
+    color: #5E2F2B;
+  }
+  .Subtitulo {
+    flex-direction: column;
+    width: auto;
+  }
+  .info-contacto {
+    margin: 10px;
+    padding-top: 0rem;
+    padding-inline: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .info-contacto .atencion {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-contacto .atencion .horario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .atencion .horario .map-responsive {
+    width: 100%;
+  }
+  .info-contacto .atencion .comunicate {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contactanos {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .p {
+    width: 300px;
+    color: #130C0B;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  .body {
+    background-color: #78286B;
+    color: #E600C2;
+  }
+  .body .imagendelogo {
+    margin: auto;
+  }
+  .body .titulo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .h1 {
+    color: #E600C2;
+  }
+  .info {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .cajita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .img_inicio {
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    display: flex;
+  }
+  .parrafos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    display: grid;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .h2 {
+    color: #AA0490;
+  }
+  .h3 {
+    color: #462D42;
+  }
+  .p {
+    width: 100%;
+    color: #1B0005;
+  }
+  .Subtitulo {
+    flex-direction: column;
+    width: auto;
+  }
+  .info-contacto {
+    margin: 10px;
+    padding-top: 0rem;
+    padding-inline: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .info-contacto .atencion {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .info-contacto .atencion .horario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .atencion .horario .map-responsive {
+    width: 100%;
+  }
+  .info-contacto .atencion .comunicate {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .contactanos {
+    margin: 10px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=estilo.css.map */

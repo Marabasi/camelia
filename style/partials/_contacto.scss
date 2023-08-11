@@ -1,6 +1,6 @@
 .info-contacto {
     padding-top: 2rem;
-    padding-inline: 4rem;
+    padding-inline: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -14,8 +14,6 @@
             margin: 15px;
             width: 400px;
         }
-      }
-    .comunicate {
         .map-responsive {
             display: flex;
             justify-content: flex-end;
@@ -32,12 +30,19 @@
                 position: absolute;
             }
         }
-    }
+      }
+ 
+
     .contactanos{
-        color: $secondaryColor;
-        
-        
+        display: flex;
+        flex-direction: column;
+        .Subtitulocon {
+            display: flex;
+            justify-content:left;
+            color: $secondaryColor;
+        }
     }
+
     p {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #1B0005;

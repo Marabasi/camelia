@@ -1,6 +1,16 @@
 @media screen and (max-width: 480px) {
     .body {
         background-color: #AA4139;
+        .titulo {
+            flex-direction: column;
+            width: 100%;
+        }
+        .imagendelogo {
+            margin:auto;
+        }
+    }
+
+    .h1 {
         color: #FF2615;
     }
 
@@ -8,56 +18,31 @@
         flex-direction: column;
         width: auto;
         grid-template-columns: 1fr;
-    }
-
-    .cajita {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .img_inicio {
-        display: flex;
-        text-align: center;
-        width: 100%;
-    }
-
-    .parrafos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        position: relative;
-        padding: auto;
-        margin: auto;
-        color: #5E2F2B;
-    }
-
-    .imagendelogo {
-        margin:auto;
-    }
-
-    .titulo {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .menu {
-        flex-direction: column;
-        width: auto;
+        .cajita {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            .img_inicio {
+                display: flex;
+                text-align: center;
+                width: auto;
+                height: 100%;
+            }
+            .parrafos {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                position: relative;
+                padding: auto;
+                margin: auto;
+                color: #5E2F2B;
+            }
+        }
     }
 
     .productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat (12, 1fr);
-
-    }
-
-    .menu li a {
-        color: #130C0B;
-    }
-    
-    .h1 {
-        color: #FF2615;
     }
 
     .h2 {
@@ -69,11 +54,6 @@
         color: #5E2F2B;
     }
 
-    .Notinfo {
-        display: grid;
-        grid-template-columns: 100%;
-        color: #5E2F2B;
-    }
 
     .Subtitulo {
         flex-direction: column;
@@ -81,33 +61,36 @@
     }
 
     .info-contacto {
+        margin: 10px;
         padding-top: 0rem;
         padding-inline: 0rem;
         display: flex;
         flex-direction: column;
         gap: 0rem;
+        .atencion {
+            display: flex;
+            flex-direction: column;
+            .horario {
+                display: grid;
+                grid-template-columns: 1fr;
+                .map-responsive {
+                    width: 100%;
+                }
+            }
+            .comunicate {
+                display: grid;
+                grid-template-columns: 1fr; 
+            }
+        }
+        
     }
 
-    .horario {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .comunicate {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .map-responsive {
-        width: 100%;
-    }
     .contactanos {
+        margin: 10px;
+        padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
     }
-    .atencion {
-        display: flex;
-        flex-direction: column;
-    }
-
     .p {
         width: 300px;
         color: #130C0B;
@@ -120,54 +103,49 @@
     .body {
         background-color: #78286B;
         color: #E600C2;
+        .imagendelogo {
+            margin:auto;
+        }
+        .titulo {
+            flex-direction: column;
+            width: 100%;
+        }
     }
-    .info {
+
+    .h1 {
+        color: #E600C2;
+     }
+
+     .info {
+        flex-direction: column;
         grid-template-columns: 1fr;
-    }
+     }
+
+        
     .cajita {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-    }
-    .img_inicio {
-        display: flex;
-        width: 60%;
-        align-content: center;
-
-    }
-    .parrafos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        position: relative;
-        padding: auto;
-        margin: auto;
-    }
-    .imagendelogo {
-        margin:auto;
-    }
-    .titulo {
-        flex-direction: column;
-        width: 100%;
-    }
-     .info {
-        flex-direction: column;
-     }
-    .menu {
-        flex-direction: column;
-    }
-
-     .productos {
+        
+        }
+        .img_inicio {
+            width: 60%;
+            margin: auto; //to center the imagen//
+            align-content: center;
+            display: flex;
+            }
+        .parrafos {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            position: relative;
+            padding: auto;
+            margin: auto;
+            display: grid;
+            }
+    
+    .productos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 1fr);
-     }
-
-     .menu li a {
-        color: #141313;
-     }
-
-     .h1 {
-        color: #E600C2;
      }
 
      .h2 {
@@ -177,8 +155,45 @@
      .h3 {
         color: #462D42;
      }
+    
      .p {
-        width: 200px;
+        width: 100%;
         color: #1B0005;
      }
+
+     .Subtitulo {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .info-contacto {
+        margin: 10px;
+        padding-top: 0rem;
+        padding-inline: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .atencion {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            .horario {
+                display: grid;
+                grid-template-columns: 1fr;
+                .map-responsive {
+                    width: 100%;
+                }
+            }
+            .comunicate {
+                display: grid;
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        .contactanos {
+            margin: 10px;
+            padding: 20px;
+        }
+        
+    }
 }
