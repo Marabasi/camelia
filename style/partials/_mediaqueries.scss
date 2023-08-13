@@ -81,7 +81,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 .map-responsive {
-                    width: 100%;
+                    width: 95%;
                 }
             }
             .comunicate {
@@ -178,7 +178,9 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 .map-responsive {
-                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
                 }
             }
             .comunicate {
