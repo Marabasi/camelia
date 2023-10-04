@@ -128,3 +128,7 @@ comprar();
 
     let subtotal = 0;
     let seguirComprando = true;
+
+    // DOM***
+    subtitulo-info[0].innerHTML = "<a href='#'>Haz clik aquí</a>.";
+    parrafos[2].remove();
